@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="g7f-bh-zvB">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Onboarding" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pague e organize suas comtas em um só lugar" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCZ-cW-veA">
+                                <rect key="frame" x="24" y="363" width="366" height="57.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bIJ-CN-HS9">
+                                <rect key="frame" x="24" y="436.5" width="366" height="75"/>
+                                <string key="text">Além de pagar em segundos, você adiciona débitos automáticos para manter tudo em dia e recebe lembretes para não perder as datas de vencimentos</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wrapper_ftu_reminder" translatesAutoresizingMaskIntoConstraints="NO" id="Ioe-G5-0Jj">
+                                <rect key="frame" x="87" y="210" width="240" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="fG8-qt-eQM"/>
+                                    <constraint firstAttribute="width" constant="240" id="l5Q-Yp-wui"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yez-ot-5MP">
+                                <rect key="frame" x="51" y="814" width="312" height="48"/>
+                                <color key="backgroundColor" red="0.0" green="0.58823529411764708" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="yMT-NE-50k"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Começar a usar"/>
+                                <connections>
+                                    <action selector="continueButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WBv-5l-u4w"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bCZ-cW-veA" firstAttribute="top" secondItem="Ioe-G5-0Jj" secondAttribute="bottom" constant="23" id="4Ag-XE-yTZ"/>
+                            <constraint firstItem="bCZ-cW-veA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="8hh-eG-YxF"/>
+                            <constraint firstItem="Ioe-G5-0Jj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="122" id="Sl1-QE-c32"/>
+                            <constraint firstItem="yez-ot-5MP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="51" id="ZcJ-9X-Kzc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yez-ot-5MP" secondAttribute="bottom" constant="24" id="Zwm-gY-Vfh"/>
+                            <constraint firstItem="Ioe-G5-0Jj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eCX-Dp-d6d"/>
+                            <constraint firstItem="bIJ-CN-HS9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="fkH-6i-OrS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bCZ-cW-veA" secondAttribute="trailing" constant="24" id="h3K-la-zni"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yez-ot-5MP" secondAttribute="trailing" constant="51" id="qbi-0d-qDY"/>
+                            <constraint firstItem="bIJ-CN-HS9" firstAttribute="top" secondItem="bCZ-cW-veA" secondAttribute="bottom" constant="16" id="uLK-C5-h9O"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bIJ-CN-HS9" secondAttribute="trailing" constant="24" id="yb2-r2-bzH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="PgE-y9-a3Q"/>
+                    <connections>
+                        <outlet property="continueButton" destination="yez-ot-5MP" id="WDF-SQ-nfS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="97" y="84"/>
+        </scene>
+        <!--Debts View Controller-->
+        <scene sceneID="DMY-Kq-vSm">
+            <objects>
+                <viewController storyboardIdentifier="DebtsViewController" id="OwL-aG-bP2" customClass="DebtsViewController" customModule="Onboarding" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fqs-aD-QOU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="yfz-qd-3m2">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="806"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wtq-Wf-Ze8">
+                                <rect key="frame" x="20" y="814" width="374" height="48"/>
+                                <color key="backgroundColor" red="0.0" green="0.58823529409999997" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="49G-PX-Miq"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Adicionar un debito automatico"/>
+                                <connections>
+                                    <action selector="addButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zeZ-UO-R5d"/>
+                                    <action selector="debtsTableViewButton:" destination="OwL-aG-bP2" eventType="touchUpInside" id="jKM-cj-a0z"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ICC-6i-Pg6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yfz-qd-3m2" firstAttribute="trailing" secondItem="ICC-6i-Pg6" secondAttribute="trailing" id="3hu-85-wTQ"/>
+                            <constraint firstItem="yfz-qd-3m2" firstAttribute="leading" secondItem="ICC-6i-Pg6" secondAttribute="leading" id="CRs-uC-Bhh"/>
+                            <constraint firstItem="wtq-Wf-Ze8" firstAttribute="bottom" secondItem="ICC-6i-Pg6" secondAttribute="bottom" id="QeR-ma-KW5"/>
+                            <constraint firstItem="ICC-6i-Pg6" firstAttribute="trailing" secondItem="wtq-Wf-Ze8" secondAttribute="trailing" constant="20" id="Z0K-kM-fpb"/>
+                            <constraint firstItem="wtq-Wf-Ze8" firstAttribute="leading" secondItem="ICC-6i-Pg6" secondAttribute="leading" constant="20" id="asn-V5-Lld"/>
+                            <constraint firstItem="wtq-Wf-Ze8" firstAttribute="top" secondItem="yfz-qd-3m2" secondAttribute="bottom" constant="8" symbolic="YES" id="eN4-8i-zx2"/>
+                            <constraint firstItem="yfz-qd-3m2" firstAttribute="top" secondItem="Fqs-aD-QOU" secondAttribute="top" id="r2C-lA-l65"/>
+                            <constraint firstItem="wtq-Wf-Ze8" firstAttribute="top" secondItem="yfz-qd-3m2" secondAttribute="bottom" constant="8" symbolic="YES" id="ycm-uN-2EY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="debtsTableView" destination="yfz-qd-3m2" id="wEv-lZ-MfM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JVK-74-Kpi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="786.95652173913049" y="83.705357142857139"/>
+        </scene>
+        <!--Add Debts View Controller-->
+        <scene sceneID="hb4-Ig-wLe">
+            <objects>
+                <viewController storyboardIdentifier="AddDebtsViewController" id="NZj-lh-lZZ" customClass="AddDebtsViewController" customModule="Onboarding" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EcT-f9-81d">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Entidad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGN-O8-v3V">
+                                <rect key="frame" x="82" y="95" width="58" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VNR-TE-XB3">
+                                <rect key="frame" x="82" y="149" width="250" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Estado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yez-P2-GAY">
+                                <rect key="frame" x="82" y="233" width="53" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H1o-0q-3aY">
+                                <rect key="frame" x="82" y="287" width="250" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nro de cuenta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ykD-FC-S1O">
+                                <rect key="frame" x="83" y="359" width="108" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QIX-c9-f5d">
+                                <rect key="frame" x="83" y="413" width="250" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lHt-5U-V4g">
+                                <rect key="frame" x="21" y="814" width="374" height="48"/>
+                                <color key="backgroundColor" red="0.0" green="0.58823529409999997" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="CMa-0p-wQk"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Adicionar un debito automatico"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Br3-OD-xSf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lHt-5U-V4g" firstAttribute="bottom" secondItem="Br3-OD-xSf" secondAttribute="bottom" id="Tyf-NH-IgJ"/>
+                            <constraint firstItem="Br3-OD-xSf" firstAttribute="trailing" secondItem="lHt-5U-V4g" secondAttribute="trailing" constant="19" id="goO-zR-uQg"/>
+                            <constraint firstItem="lHt-5U-V4g" firstAttribute="leading" secondItem="Br3-OD-xSf" secondAttribute="leading" constant="21" id="llC-Bn-cNv"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="diV-qQ-6T2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1556.521739130435" y="90.401785714285708"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rH3-jB-uq5">
+            <objects>
+                <navigationController id="g7f-bh-zvB" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cE6-Po-et1">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="bZw-NC-cYt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1if-JU-Vhj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-693" y="84"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="wrapper_ftu_reminder" width="360" height="160"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
